@@ -1,0 +1,29 @@
+# ============================================================================
+# CINEMORA — Git Ignore Rules
+# ============================================================================
+
+# Local database credentials override (use config/database.example.php as template)
+/config/database.local.php
+
+# Runtime setup lock and application logs
+/storage/setup.lock
+/storage/logs/*
+!/storage/logs/.gitignore
+!/storage/.htaccess
+
+# User-uploaded movie posters and cinema banners (seeded SVG assets in /assets/ are tracked)
+/uploads/movies/*
+!/uploads/movies/.gitignore
+/uploads/cinemas/*
+!/uploads/cinemas/.gitignore
+!/uploads/.htaccess
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
